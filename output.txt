@@ -1,0 +1,5 @@
+Highest grade: 76
+Lowest grade: 30
+
+Boby B: F
+Anna A: C
