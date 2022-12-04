@@ -48,11 +48,13 @@ int main(){
   }
 
   highestAvg = gradesVect.at(0);
+  lowestAvg = gradesVect.at(0);
   for(int i = 0; i < entries; i++){
     if(highestAvg < gradesVect.at(i)){
-      temp = highestAvg;
       highestAvg = gradesVect.at(i);
-      lowestAvg = temp;
+    }
+    if(lowestAvg > gradesVect.at(i)){
+      lowestAvg = gradesVect.at(i);
     }
   }
   outFS << "Highest grade: " << highestAvg << endl;
